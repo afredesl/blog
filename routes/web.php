@@ -15,7 +15,7 @@ Route::get('posts', function () {
     return App\Post::all();
 });
 
-Route::get('post/{id}', 'PostsController@show');
+Route::get('post/{post}', 'PostsController@show');
 
 Route::group([
 	'prefix' => 'admin', 

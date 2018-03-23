@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use App\Post;
 class PostsController extends Controller
 {
-    public function show($id){
-        $post = Post::find($id);
+    public function show( Post $post ){
        return view('posts.show', compact('post'));
     }
 }

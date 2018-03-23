@@ -26,7 +26,8 @@ class PostsTableSeeder extends Seeder
     	$category->save();
         
     	$post = new Post;
-    	$post->title = "Mi primer Post";
+		$post->title = "Mi primer Post";
+		$post->url = str_slug("Mi primer Post");
     	$post->excerpt = "Extracto de mi primer post";
     	$post->body = "<p>Contenido de mi primer post </p>";
     	$post->published_at = Carbon::now();
@@ -34,7 +35,8 @@ class PostsTableSeeder extends Seeder
     	$post->save();
 
     	$post = new Post;
-    	$post->title = "Mi segundo Post";
+		$post->title = "Mi segundo Post";
+		$post->url = str_slug("Mi segundo Post");
     	$post->excerpt = "Extracto de mi segundo post";
     	$post->body = "<p>Contenido de mi segundo post </p>";
     	$post->published_at = Carbon::now();
@@ -42,7 +44,8 @@ class PostsTableSeeder extends Seeder
     	$post->save();
 
     	$post = new Post;
-    	$post->title = "Mi tercer Post";
+		$post->title = "Mi tercer Post";
+		$post->url = str_slug("Mi tercer Post");
     	$post->excerpt = "Extracto de mi tercer post";
     	$post->body = "<p>Contenido de mi tercer post </p>";
     	$post->published_at = Carbon::now();
@@ -51,7 +54,8 @@ class PostsTableSeeder extends Seeder
 
 
 		$post = new Post;
-    	$post->title = "Mi cuarto Post";
+		$post->title = "Mi cuarto Post";
+		$post->url = str_slug("Mi cuarto Post");
     	$post->excerpt = "Extracto de mi cuarto post";
     	$post->body = "<p>Contenido de mi cuarto post </p>";
     	$post->published_at = Carbon::now();
