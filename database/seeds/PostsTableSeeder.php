@@ -3,6 +3,8 @@
 use Illuminate\Database\Seeder;
 use App\Post;
 use App\Category;
+use App\Tag;
+use App\User;
 use Carbon\Carbon;
 class PostsTableSeeder extends Seeder
 {
@@ -60,7 +62,28 @@ class PostsTableSeeder extends Seeder
     	$post->body = "<p>Contenido de mi cuarto post </p>";
     	$post->published_at = Carbon::now();
     	$post->category_id = 1;
-    	$post->save();
+		$post->save();
+		
+		$tag = new Tag;
+		$tag->name = 'Etiqueta 1';
+		$tag->save();
 
+		$tag = new Tag;
+		$tag->name = 'Etiqueta 2';
+		$tag->save();
+
+		$tag = new Tag;
+		$tag->name = 'Etiqueta 3';
+		$tag->save();
+
+		$tag = new Tag;
+		$tag->name = 'Etiqueta 4';
+		$tag->save();
+
+		$user = new User;
+		$user->name = "Alex Fredes";
+		$user->email = "alex.fredes.l@gmail.com";
+		$user->password = bcrypt('1234');
+		$user->save();
     }
 }

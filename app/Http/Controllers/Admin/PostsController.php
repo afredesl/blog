@@ -34,6 +34,7 @@ class PostsController extends Controller
         ]); // Este metod
         $post = new Post;
         $post->title = $request->get('title');
+        $post->url = str_slug($request->get('title'));
         $post->body = $request->get('body');
         $post->excerpt = $request->get('excerpt');
         $post->category_id = $request->get('category');

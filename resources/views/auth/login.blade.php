@@ -7,11 +7,11 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="admin/adminlte/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="administrador/adminlte/bootstrap/dist/css/bootstrap.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="admin/adminlte/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="administrador/adminlte/css/AdminLTE.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="admin/adminlte/plugins/iCheck/square/blue.css">
+  <link rel="stylesheet" href="administrador/adminlte/plugins/iCheck/square/blue.css">
 
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -82,11 +82,11 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
-<script src="admin/adminlte/jquery/dist/jquery.min.js"></script>
+<script src="administrador/adminlte/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="admin/adminlte/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="administrador/adminlte/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- iCheck -->
-<script src="admin/adminlte/plugins/iCheck/icheck.min.js"></script>
+<script src="administrador/adminlte/plugins/iCheck/icheck.min.js"></script>
 <script>
   $(function () {
     $('input').iCheck({
